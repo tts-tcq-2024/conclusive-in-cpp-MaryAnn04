@@ -1,16 +1,18 @@
 #include "typewise-alert.h"
+ 
+// Example usage
+int main() {
+    // Simulate a battery character
+    BatteryCharacter batteryChar;
+    batteryChar.coolingType = HI_ACTIVE_COOLING;
+    strncpy(batteryChar.brand, "SampleBrand", sizeof(batteryChar.brand) - 1);
+    batteryChar.brand[sizeof(batteryChar.brand) - 1] = '\0'; // Ensure null termination
 
-// Temperature limits lookup table for each cooling type
-static const TemperatureLimits coolingLimits[] = {
-    {0, 35},  // PASSIVE_COOLING
-    {0, 45},  // HI_ACTIVE_COOLING
-    {0, 40}   // MED_ACTIVE_COOLING
-};
+    // Simulate temperature readings
+    double temperatureInC = 50.0; // Example temperature
+    AlertTarget alertTarget = TO_EMAIL; // Example alert target
 
-// Function to retrieve temperature limits based on cooling type
-TemperatureLimits getTemperatureLimits(CoolingType coolingType) {
-    if (coolingType < PASSIVE_COOLING || coolingType > MED_ACTIVE_COOLING) {
-        fprintf(stderr, "Error: Invalid cooling type.\n");
-    }
-    return coolingLimits[coolingType];
+    // Check and send alert
+    checkAndAlert(alertTarget, batteryChar, temperatureInC);
+    return 0;
 }
