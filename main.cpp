@@ -1,6 +1,6 @@
 #include "typewise-alert.h"
  
-// Example usage
+// Example 
 int main() {
     // Simulate a battery character
     BatteryCharacter batteryChar;
