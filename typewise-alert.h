@@ -1,4 +1,6 @@
-#pragma once
+#include <stdio.h>   
+#include <stdlib.h>  
+#include <string.h>  
 
 typedef enum {
     PASSIVE_COOLING,
@@ -12,13 +14,13 @@ typedef enum {
     TOO_HIGH
 } BreachType;
 
+// Struct to define temperature limits for each cooling type
 typedef struct {
-    int lowerLimit;
-    int upperLimit;
-} Limits;
+    double lowerLimit;
+    double upperLimit;
+} TemperatureLimits;
 
 BreachType inferBreach(double value, double lowerLimit, double upperLimit);
-Limits getLimits(CoolingType coolingType);
 BreachType classifyTemperatureBreach(CoolingType coolingType, double temperatureInC);
 
 typedef enum {
@@ -32,6 +34,8 @@ typedef struct {
 } BatteryCharacter;
 
 void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
-void sendAlert(AlertTarget alertTarget, BreachType breachType);
 void sendToController(BreachType breachType);
 void sendToEmail(BreachType breachType);
+
+TemperatureLimits getTemperatureLimits(CoolingType coolingType);
+void handleAlert(AlertTarget alertTarget, BreachType breachType);
