@@ -45,11 +45,12 @@ Think about guiding refactoring-work in your regular/project teams. Think of the
 You have seen a few workflows in this repository. They are quality-gates to prevent duplication, control complexity and prove functionality. Do you think some of them have potential to guide code-improvements in your team?  yes
 
 During the next four weeks, what improvement do you plan in your code-quality practice? (in your regular work, not in this repository!)
+
 Over the next four weeks, I aim to elevate the quality of my code by concentrating on the following practices:
 
-Modular Code Structure: I'll work on breaking down my code into smaller, independent modules to make it more manageable and easier to build upon. Keeping CCN in mind and loc less as possible.
-Bug Detection via Testing: I'll focus on identifying bugs through thorough testing, making sure that all edge cases and scenarios are carefully tested.
-Adoption of Test-Driven Development (TDD): Embracing TDD will be central to my approach, as it involves writing tests before implementing the code, resulting in more dependable and well-structured code.
-Enhanced Testing Strategies: I'll aim to refine my testing methods to ensure tests are comprehensive, meaningful, and cover a wide variety of scenarios. sp that all possible tests are covered aiming 100%- code coverage.
-Consistent Code Reviews: I plan to implement regular code reviews for all code, which will help identify issues early and reinforce good coding practices across the team.
-Emphasis on Pure Functions: Writing pure functions will be a priority, as they improve the code's readability and make testing simpler and more straightforward.
+1. Modular Code Structure: I'll work on breaking down my code into smaller, independent modules to make it more manageable and easier to build upon. Keeping CCN in mind and loc less as possible.
+2. Bug Detection via Testing: I'll focus on identifying bugs through thorough testing, making sure that all edge cases and scenarios are carefully tested.
+3. Adoption of Test-Driven Development (TDD): Embracing TDD will be central to my approach, as it involves writing tests before implementing the code, resulting in more dependable and well-structured code.
+4. Enhanced Testing Strategies: I'll aim to refine my testing methods to ensure tests are comprehensive, meaningful, and cover a wide variety of scenarios. sp that all possible tests are covered aiming 100%- code coverage.
+5. Consistent Code Reviews: I plan to implement regular code reviews for all code, which will help identify issues early and reinforce good coding practices across the team.
+6. Emphasis on Pure Functions: Writing pure functions will be a priority, as they improve the code's readability and make testing simpler and more straightforward.
