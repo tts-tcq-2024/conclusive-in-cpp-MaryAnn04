@@ -1,7 +1,8 @@
 #include <gtest/gtest.h>
 #include "typewise-alert.h"
 
-TEST(TypeWiseAlertTestSuite, InfersBreachAccordingToLimits) {
+TEST(TypeWiseAlertTestSuite, InfersBreachAccordingToLimits) 
+{
     EXPECT_EQ(inferBreach(12, 10, 20), NORMAL);
     EXPECT_EQ(inferBreach(5, 10, 20), TOO_LOW);
     EXPECT_EQ(inferBreach(25, 10, 20), TOO_HIGH);
